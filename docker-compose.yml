@@ -54,3 +54,9 @@ services:
       - WO_DEBUG
     restart: unless-stopped
     oom_score_adj: 250
+  node-odm:
+    image: opendronemap/nodeodm
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    oom_score_adj: 500

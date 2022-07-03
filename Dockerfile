@@ -7,8 +7,8 @@ ENV PYTHONPATH $PYTHONPATH:/webodm
 ENV PROJ_LIB=/usr/share/proj
 
 # Prepare directory
-ADD . /webodm/
-WORKDIR /webodm
+ADD . /agx-odm/
+WORKDIR /agx-odm
 
 # Install Node.js
 RUN apt-get -qq update && apt-get -qq install -y --no-install-recommends wget curl && \
